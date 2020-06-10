@@ -38,7 +38,7 @@ ggplot(sum_steps_per_day, aes(Group.1, x)) + geom_histogram(stat = "identity",
     binwidth = 24 * 60 * 60) + xlab("Day") + ylab("# Steps") + ggtitle("# Steps Per Day")
 ```
 
-![plot of chunk part2_1](figure/part2_1.png) 
+![plot of chunk part2_1](part2_1.png) 
 
 ```r
 
@@ -72,7 +72,7 @@ ggplot(data = removed_steps_na_data, mapping = aes(x = interval, y = steps)) +
     ylab("Avg. # of Steps Over All Days") + ggtitle("Average Daily Activity Pattern")
 ```
 
-![plot of chunk part3_1](figure/part3_1.png) 
+![plot of chunk part3_1](part3_1.png) 
 
 
 
@@ -160,7 +160,7 @@ ggplot(sum_steps_per_day_imputed, aes(Group.1, x)) + geom_histogram(stat = "iden
     binwidth = 24 * 60 * 60) + xlab("Day") + ylab("# Steps") + ggtitle("# Steps Per Day (Imputed)")
 ```
 
-![plot of chunk part4_4](figure/part4_4.png) 
+![plot of chunk part4_4](part4_4.png) 
 
 
 
@@ -199,7 +199,7 @@ ggplot(data = data, mapping = aes(x = interval, y = imputed_steps)) + stat_summa
     ncol = 1)
 ```
 
-![plot of chunk part5_1](figure/part5_1.png) 
+![plot of chunk part5_1](part5_1.png) 
 
 
 As the plot above shows, there are differences in the weekend vs. weekday activity patterns.
